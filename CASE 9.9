@@ -1,0 +1,8 @@
+def is_free(lst):
+    a = False
+    for c in lst:
+        a = a or any(map(lambda x: "#" in x, c))
+    return a
+
+
+print(is_free(['x x o', 'x # x', 'o x x']))
